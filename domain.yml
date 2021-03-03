@@ -1,0 +1,57 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - event
+  - contact_us
+  - contact_fb
+  - contact_insta
+  - contact_linkedin
+
+responses:
+  utter_greet:
+  - text: "Hey! Welcome to the website of IEEE SB NIT Durgapur. How can I help you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+    
+  utter_event:
+  - text: "Here are all of our [activities](https://www.ieeesbnitdgp.com/thereg/)"  
+
+  utter_contact_us:
+  - text: "Here are all of our social media links: 1. [Facebook](https://www.facebook.com/nitdgpieeesociety/) 2. [Instagram](https://www.instagram.com/ieeesb_nitdgp/) 3. [LinkedIn](https://www.linkedin.com/company/ieeesbnitdgp/)"
+
+  utter_contact_fb:
+  - text: "Here is our facebook link: [Facebook](https://www.facebook.com/nitdgpieeesociety/)"
+
+  utter_contact_insta:
+  - text: "Here is our instagram link: [Instagram](https://www.instagram.com/ieeesb_nitdgp/)"
+  
+  utter_contact_linkedin:
+  - text: "Here is our linkedin link: [LinkedIn](https://www.linkedin.com/company/ieeesbnitdgp/)"
+    
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, working for IEEE SB NIT Durgapur, powered by Rasa."
+  
+  utter_no_more:
+  - text: "Sorry, that's all I have!"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
