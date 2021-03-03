@@ -1,0 +1,174 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - fine
+    - okay
+    - cool
+    - thank you
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: event
+  examples: |
+    - what events do you conduct?
+    - what are your events?
+    - what do you do?
+    - any events?
+    - any workshops?
+    - tell me some of your events
+    - tell me what you do
+    - what programs you do?
+    - tell me some of your works
+    - tell me some of your programs
+    - tell me your activities
+    - what activities do you conduct?    
+ 
+- intent: contact_us
+  examples: |
+    - how can I contact you?
+    - how can I reach you?
+    - how to reach you through social media?
+    - tell me how to reach you
+    - tell me how to contact you
+    - are you available in social media?
+    - can I get your social media links?
+    - can I get your social media handles?
+    
+- intent: contact_fb
+  examples: |
+    - can I get your facebook link?
+    - are you available in facebook?
+    - give me your facebook link
+    - give me your facebook ID
+    - can I get your fb link?
+    - can you get me your fb link?
+    - can I get your facebook link?
+    - get me your facebook link
+    - get me your fb link
+    - give me your fb link
+    - can you give me your facebook link?
+    - can you give me your fb link
+    - fb link
+    - facebook link
+    - send me fb link
+    - give me fb link
+    - find me fb link
+    
+- intent: contact_insta
+  examples: |
+    - can I get your instagram link?
+    - can I get your instagram handle?
+    - can I get your insta handle?
+    - can I get your Insta link?
+    - can I get your Insta ID?
+    - give me your instagram link
+    - give me your insta link
+    - give me your insta ID
+    - give me your insta handle
+    - give me your instagram handle
+    - get me your insta link
+    - get me your instagram link
+    - are you available in insta?
+    - are you available in instagram?
+    - insta link
+    - instragram link
+
+- intent: contact_linkedin
+  examples: |
+    - can I get your linkedin link?
+    - get me your linkedin link
+    - give me your linkedin link
+    - can you give me your linkedin ID?
+    - are you available in linkedin?
+    - find me your linkedin link
+    - get me to your linkedin page
+    - do you have any linkedin page?
+    - linkedin link
+    - give linkedin link
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

@@ -1,0 +1,130 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+  
+- story: event path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: event
+  - action: utter_event
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: event path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: event
+  - action: utter_event
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+  
+- story: contact path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: contact_us
+  - action: utter_contact_us
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: contact path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: contact_us
+  - action: utter_contact_us
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+  
+- story: contact fb path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: contact_fb
+  - action: utter_contact_fb
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: contact fb path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: contact_fb
+  - action: utter_contact_fb
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: contact insta path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: contact_insta
+  - action: utter_contact_insta
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: contact insta path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: contact_insta
+  - action: utter_contact_insta
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more
+
+- story: contact linkedin path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: contact_linkedin
+  - action: utter_contact_linkedin
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  
+- story: contact linkedin path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: contact_linkedin
+  - action: utter_contact_linkedin
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_no_more  
